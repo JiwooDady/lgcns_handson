@@ -30,7 +30,7 @@ warnings.filterwarnings(action="ignore")
 
 
 if __name__ == "__main__":
-    train_df = pd.read_csv(os.path.join(DATA_PATH, "house_rent_train.csv"))
+    train_df = pd.read_csv(os.path.join(DATA_PATH, "bike_sharing_train.csv"))
     logger.debug("Load data...")
 
     _X = train_df.drop(["rent", "area_locality", "posted_on"], axis=1)
